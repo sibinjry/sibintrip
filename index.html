@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99trip</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="../Pages/Images/Colour Coding For Website (1).png">
+</head>
+<style>
+    ::placeholder {
+        color: #fff;
+    }
+</style>
+
+<body>
+
+
+    <div class="Home">
+        <!-- NAVIGATION -->
+
+        <div class="Navbar">
+            <div class="Nav-start">
+                <!-- <img src="../Pages/Images/logo1.png" alt=""> -->
+                <!-- <p>99trip</p> -->
+            </div>
+
+            <div class="Nav-Middle">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Packages.html">Packages</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="Nav-End">
+                <button><i class="fa-solid fa-user"></i>Log In</button>
+            </div>
+        </div>
+
+
+
+        <!-- SECTION ONE -->
+        <div class="Section-one">
+
+            <div class="text">
+                Discover Story - Worthy <span>Travel Moments</span>
+            </div>
+
+            <div class="logo">
+                <div class="logo-individual Flight " onclick="changeContent('Flight')">
+                    <img src="Images/7.png" alt="">
+                    <p>Flight</p>
+                </div>
+
+                <div class="logo-individual Hotel" onclick="changeContent('Hotel')">
+                    <img src="Images/8.png" alt="">
+                    <p>Hotel</p>
+                </div>
+
+                <div class="logo-individual Bus" onclick="changeContent('Bus')">
+                    <img src="Images/9.png" alt="">
+                    <p>Bus</p>
+                </div>
+
+                <div class="logo-individual Train" onclick="changeContent('Train')">
+                    <img src="Images/10.png" alt="">
+                    <p>Train</p>
+                </div>
+
+                <div class="logo-individual Tour" onclick="changeContent('Tour')">
+                    <img src="Images/11.png" alt="">
+                    <p>Tour</p>
+                </div>
+
+                <div class="logo-individual Visa" onclick="changeContent('Visa')">
+                    <img src="Images/12.png" alt="">
+                    <p>Visa</p>
+                </div>
+
+                <div class="logo-individual Insurance" onclick="changeContent('Insurance')">
+                    <img src="Images/13.png" alt="">
+                    <p>Insurance</p>
+                </div>
+
+                <div class="logo-individual Utility" onclick="changeContent('Utility')">
+                    <img src="Images/14.png" alt="">
+                    <p>Utility</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION TWO -->
+        <div class="section-two" id="content">
+            <div class="form">
+                <div class="form-individual">
+                    <label for="" class="form-group form-individual-label">From</label>
+                    <!-- <input type="text" name="" id="" class="form-control  form-individual-input1" placeholder="Bengaluru"> -->
+                    <select name="" id="" class="form-control form-individual-input2">
+                        <option value="">Bengaluru</option>
+                        <option value="">Chennai</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Kochi </option>
+                        <option value="">Trivanadapuram</option>
+                    </select>
+                </div>
+
+                <div class="form-individual">
+                    <label for="" class="form-group form-individual-label">To</label>
+                    <!-- <input type="text" name="" id="" class="form-control  form-individual-input1" placeholder="Bengaluru"> -->
+                    <select name="" id="" class="form-control form-individual-input2">
+                        <option value="">Chennai</option>
+                        <option value="">Bengaluru</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Kochi </option>
+                        <option value="">Trivanadapuram</option>
+                    </select>
+                </div>
+
+                <div class="form-individual">
+                    <label for="" class="form-group form-individual-label">Journey date</label>
+                    <!-- <input type="text" name="" id="" class="form-control  form-individual-input1" placeholder="Bengaluru"> -->
+                    <input type="date" class="form-control section-two-date">
+                </div>
+
+                <div class="form-individual">
+                    <label for="" class="form-group form-individual-label">Passenger Class</label>
+                    <!-- <input type="text" name="" id="" class="form-control  form-individual-input1" placeholder="Bengaluru"> -->
+                    <select name="" id="" class="form-control form-individual-input2">
+                        <option value="">01 Passenger</option>
+                        <option value="">02-05 Passengers</option>
+                        <option value="">05-10 Passengers</option>
+                        <option value="">More than that</option>
+                    </select>
+                </div>
+
+                <div class="form-button">
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        function changeContent(contentId) {
+            var content = document.getElementById('content');
+
+            content.innerHTML = '';
+
+            switch (contentId) {
+                case 'Flight':
+                    content.innerHTML = '<div  class="Flight" style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px; display:flex; justify-content:space-between;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500; " >From</label><input class="form-control" type="text" style="border-radius:10px; background-color: transparent !important; color:white !important; box-shadow: 0 0 4px #DDDDDD; width:200px; margin-top:10px;" placeholder="select destination"/></div><div class="section2" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >To</label><input class="form-control" type="text" style="border-radius:10px;  background-color: transparent !important; color: white !important; box-shadow: 0 0 4px #DDDDDD; width:200px; margin-top:10px;" placeholder="select destination"/></div><div class="section3"><label style="color:#ED9957; font-size:18px; font-weight:500; margin-bottom:10px;">Depature</label><input type="date" class="form-control" style=" background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"/></div><div class="section4"><label style="color:#ED9957; font-size:18px; font-weight:500; margin-bottom:10px;">Arrival</label><input type="date" class="form-control" style=" background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"/></div><button style="color:#ED9957; background-color:transparent; border:none; font-size:18px; font-weight:500;">Submit</button></div></div>';
+                    break;
+                case 'Hotel':
+                    content.innerHTML = '<div style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >Hotel</label><div style="display:flex; justify-content:space-between;"><select class="form-group"  style="margin-top:10px; padding:0px 10px; height:40px; border-radius:20px; text-align:center; width:80%;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"><option>Search Hotels</option><option>Bali</option><option>Dubai</option><option>Singapore</option><option>Malaysia</option></select> <button style="width:100px; height:40px; margin-top:10px; background-color:black; color:#ED9957; border:none; padding:5px 10px; border-radius:10px; font-size:18px; font-weight:500;">Select</button></div></div></div>';
+                    break;
+                case 'Train':
+                    content.innerHTML = '<div  style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px; display:flex; justify-content:space-between;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >From</label><input class="form-control" type="text" style="border-radius:10px; width:200px; margin-top:10px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;" placeholder="select destination"/></div><div class="section2" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >To</label><input class="form-control" type="text" style="border-radius:10px; width:200px; margin-top:10px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;" placeholder="select destination"/></div><div class="section3"><label style="color:#ED9957; margin-bottom:10px; font-size:18px; font-weight:500;">Depature</label><input type="date" class="form-control" style=" background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"/></div><div class="section4"><label style="color:#ED9957; margin-bottom:10px; font-size:18px; font-weight:500;">Arrival</label><input type="date" class="form-control" style=" background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"/></div><button style="color:#ED9957; background-color:transparent; border:none; font-size:18px; font-weight:500;">Submit</button></div></div>';
+                    break;
+                case 'Bus':
+                    content.innerHTML = '<div  style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px; display:flex; justify-content:space-between;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >From</label><input class="form-control" type="text" style="border-radius:10px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD; width:200px; margin-top:10px;" placeholder="select destination"/></div><div class="section2" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >To</label><input class="form-control" type="text" style="border-radius:10px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD; width:200px; margin-top:10px;" placeholder="select destination"/></div><div class="section3"><label style="color:#ED9957; margin-bottom:10px; font-size:18px; font-weight:500;">Boarding</label><input type="date" class="form-control" style=" background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;"/></div><button style="color:#ED9957; background-color:transparent; border:none; font-size:18px; font-weight:500;">Search</button></div></div>';
+                    break;
+                case 'Tour':
+                    content.innerHTML = '<div style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >Destination</label><div style="display:flex; justify-content:space-between;"><select class="form-group" style="margin-top:10px; height:40px; border-radius:20px; text-align:center; width:80%;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD;" ><option>Search Destinations</option><option>Bali</option><option>Dubai</option><option>Singapore</option><option>Malaysia</option></select> <button style="width:100px; height:40px; margin-top:10px; background-color:black; color:#ED9957; border:none; padding:5px 10px; border-radius:10px; font-size:18px; font-weight:500;">Search</button></div></div></div>';
+                    break;
+                case 'Visa':
+                    content.innerHTML = '<div style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >Country Name</label><div style="display:flex; justify-content:space-between;"><select class="form-group" style="margin-top:10px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD; height:40px; border-radius:20px; text-align:center; width:80%;" ><option>Select Country Name</option><option>Bali</option><option>Dubai</option><option>Singapore</option><option>Malaysia</option></select> <button style="width:100px; height:40px; margin-top:10px; background-color:black; color:#ED9957; border:none; padding:5px 10px; border-radius:10px; font-size:18px; font-weight:500;">Select</button></div></div></div>';
+                    break;
+                case 'Insurance':
+                    content.innerHTML = '<div style="padding:30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px;"><div class="section1" style="display:grid;"><label style="color:#ED9957; font-size:18px; font-weight:500;" >Insurance</label><div style="display:flex; justify-content:space-between;"><select class="form-group" style="margin-top:10px; height:40px;  background-color: transparent !important; color: #DDDDDD !important; box-shadow: 0 0 4px #DDDDDD; border-radius:20px; text-align:center; width:80%;" ><option>Select Insurance Type</option><option>Bali</option><option>Dubai</option><option>Singapore</option><option>Malaysia</option></select> <button style="width:100px; height:40px; margin-top:10px; background-color:black; color:#ED9957; border:none; padding:5px 10px; border-radius:10px; font-size:18px; font-weight:500;">Select</button></div></div></div>';
+                    break;
+                case 'Utility':
+                    content.innerHTML = '<div style="padding:20px 30px; background-color:rgba(0, 0, 0, 0.6); border-radius:20px; display:flex; justify-content: space-between"><img src="./Images/Utilitymobile.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitytv.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitywater.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitylandline.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilityinsurance.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitydth.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilityfasteg.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitydatacard.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilitylandline.png" alt="" style="border-radius:50%;"/><img src="./Images/Utilityloanreplace.png" alt="" style="border-radius:50%;"/></div>';
+                    break;
+                default:
+                    content.innerHTML = 'No content available.';
+                    break;
+            }
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

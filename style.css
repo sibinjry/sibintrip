@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* font-family: "Rubik", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap');
+/* font-family: "Teko", sans-serif; */
+
+/* COLOR */
+
+/* #D14379 */
+/* #DDDDDD */
+/* #263361 */
+/* NAVIGATION */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Home {
+    /* https://cdn.pixabay.com/photo/2021/12/05/10/28/nature-6847175_1280.jpg */
+    background-image: url('Images/backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+    box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.6);
+}
+
+.Home .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    color: white;
+    /* https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_1280.jpg */
+    /* background-image: url('https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_1280.jpg'); */
+    box-shadow: 0 0 10px #ED9957;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Home .Navbar .Nav-start p {
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Teko", sans-serif; */
+    font-size: 32px;
+    /* color: #263361; */
+    font-weight: 600;
+    color: #D14379;
+    /* color: #DDDDDD; */
+}
+
+.Home .Navbar .Nav-start {
+    /* background: linear-gradient(to right #E94c88 #D14379); */
+    /* background-color: #DDDDDD; */
+    /* padding:2px 30px;
+    border-radius: 10px; */
+    height: 130px;
+    width: 130px;
+    background-image: url('../Pages/Images/Colour\ Coding\ For\ Website\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .Home .Navbar .Nav-start img{
+    height: 150px;
+    width: 150px;
+} */
+
+.Home .Navbar .Nav-Middle ul {
+    display: flex;
+    list-style: none;
+}
+
+.Home .Navbar .Nav-Middle ul li {
+    margin: 22px;
+    font-family: "Roboto", sans-serif;
+    background-color: #DDDDDD;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ED9957;
+    transition: all ease 0.3s;
+}
+
+
+.Home .Navbar .Nav-Middle ul li:hover{
+    transform: scale(1.05);
+}
+
+.Home .Navbar .Nav-Middle ul li a {
+    text-decoration: none;
+    color: #263361;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.Home .Navbar .Nav-End button {
+    background: none;
+    font-size: 17px;
+    color: #DDDDDD;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+.Home .Navbar .Nav-End button i {
+    margin: 0px 10px;
+    color: #DDDDDD;
+}
+
+.Home .Section-one {
+    padding: 40px 100px;
+}
+
+.Home .Section-one .text {
+    color: #fff;
+    font-size: 33px;
+    /* margin-bottom: 120px; */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 60px 0px;
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Teko", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    /* letter-spacing: 2px; */
+}
+
+.Home .Section-one .text span {
+    color: #ED9957;
+    margin: 0px 10px;
+    font-size: 35px;
+
+}
+
+
+.Home .Section-one .logo {
+    display: flex;
+    margin: 0px 80px;
+    background-color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    margin-top: 10px;
+    border-radius: 30px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #ED9957;
+    padding: 5px 40px;
+}
+
+.Section-one .logo .logo-individual {
+    /* background-color: #DDDDDD; */
+    text-align: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.Section-one .logo .logo-individual :hover{
+    transform: scale(1.1);
+}
+
+.Section-one .logo .logo-individual p {
+    /* background-color: #DDDDDD; */
+    color: #263361;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.Section-one .logo .logo-individual img {
+    height: 60px;
+    width: 60px;
+}
+
+/* SECTION TWO */
+
+.section-two {
+    padding: 10px 100px;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.section-two .form .form-individual {
+    display: grid;
+}
+
+.section-two .form {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 1px #ED9957;
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.Section-two .form .form-individual label.form-group {
+    color: white !important;
+}
+
+
+/* .form-individual-input1{
+    background-color: transparent !important;
+    margin: 5px 0px;
+    color: white !important;
+ } */
+
+.form-individual-input2 {
+    background-color: transparent !important;
+    color: #DDDDDD !important;
+    box-shadow: 0 0 4px #DDDDDD;
+
+    font-size: 18px !important;
+    text-align: center;
+    width: 200px !important;
+    border: none !important;
+    font-family: "Roboto", sans-serif;
+   cursor: pointer;
+}
+
+.form-individual-input2 option {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px !important;
+    font-size: 15px !important;
+    margin: 10px;
+    width: 200px !important;
+    color: #263361;
+}
+
+.form-individual-label {
+    color: #ED9957 !important;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-align: center; */
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.form-button button {
+    background-color: transparent;
+    border: none;
+}
+
+.form-button button i{
+    /* margin: 10px; */
+    font-size: 30px;
+    color: #DDDDDD;
+    margin-top: 25px;
+}
+
+.section-two-date {
+    background-color: transparent !important;
+    color: white !important;
+    color: #DDDDDD !important;
+    font-size: 18px !important;
+    text-align: center;
+    width: 200px !important;
+    box-shadow: 0 0 4px #DDDDDD;
+    border: none !important;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1206px){
+    .section-two {
+        padding: 5px 20px;
+    }
+}
+

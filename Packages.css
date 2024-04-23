@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+
+
+/* COLOR */
+
+/* #D14379 */
+/* #DDDDDD */
+/* #263361 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.packages .header {
+    background-image: url('');
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px #ED9957;
+}
+
+.package-header {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    color: #ED9957;
+}
+
+.package-link {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.packages .header div i {
+    margin: 0px 10px;
+    /* #263361 */
+
+}
+
+.packages .header div a {
+    color: #263361;
+    text-decoration: none;
+}
+
+.packages .Main{
+    padding: 80px;
+}
+
+/* CARD  */
+
+.packages .card{
+    height: 350px;
+    width: 250px;
+    /* padding: 10px; */
+}
+
+.Main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-image1{
+    background-image: url('https://cdn.pixabay.com/photo/2018/11/29/20/01/nature-3846403_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image2{
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/11/14/32/burj-khalifa-4922317_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image3{
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/04/06/38/skyscrapers-1435072_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image4{
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/03/17/56/manali-2035750_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image5{
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/16/04/52/munnar-4769654_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image6{
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/06/22/18/ooty-710153_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image7{
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/17/18/10/palace-5579991_640.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card-image8{
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/31/06/26/trees-1292135_640.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+    width: 249px;
+}
+
+.card .card-header{
+    display: flex;
+    justify-content: space-between;
+    color: #ED9957;
+    height: 40px;
+}
+
+.card .card-header p{
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card .card-header p span{
+/* #D14379 */
+    color: #D14379;
+}
+
+.card .card-header strike{
+    margin: 0px 10px;
+    color: red;
+}
+.card button{
+    background-color: #263361;
+    padding: 5px 10px;
+    border: none;
+}
+
+.card button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.card .card-icon {
+    display: flex;
+    justify-content: space-between;
+   padding: 5px;
+}
+
+.card .card-icon .icon{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.card .card-icon .icon i{
+    margin: 0px 2px;
+    font-size: 13px;
+}
+
+.packages .section{
+    padding:0px 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+
+
+/* COLOR */
+
+/* #D14379 */
+/* #DDDDDD */
+/* #263361 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.services .header {
+    background-image: url('');
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px #ED9957;
+}
+
+.services .header p {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    color: #ED9957;
+}
+
+.services .header div {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.services .header div i {
+    margin: 0px 10px;
+    /* #263361 */
+
+}
+
+.services .header div a {
+    color: #263361;
+    text-decoration: none;
+}
+
+/* MAIN  */
+
+.services .Main{
+    padding: 80px;
+}
+
+.services .Main .Flight{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+}
+
+.services .Main .Flight .rightside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Main .Flight .rightside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Main .Flight .rightside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.services .Main .Flight .leftside img{
+    height: 150px;
+    width: 150px;
+}
+
+/* HOTEL  */
+
+.services .Hotel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 90px;
+}
+
+.services .Hotel .rightside img{
+    height: 150px;
+    width: 150px;
+}
+
+.services .Hotel .leftside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Hotel .leftside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Hotel .leftside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+
+/* BUS  */
+
+
+.services .Bus{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Bus .rightside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Bus .rightside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Bus .rightside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.services .Bus .leftside img{
+    height: 150px;
+    width: 150px;
+}
+
+/* TRAIN  */
+
+.services .Train{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Train .rightside img{
+    height: 150px;
+    width: 150px;
+}
+
+.services .Train .leftside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Train .leftside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Train .leftside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+/* TOUR  */
+
+
+.services .Tour{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Tour .rightside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Tour .rightside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Tour .rightside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.services .Tour .leftside img{
+    height: 150px;
+    width: 150px;
+}
+
+/* VISA  */
+
+.services .Visa{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Visa .rightside img{
+    height: 150px;
+    width: 150px;
+}
+
+.services .Visa .leftside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Visa .leftside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Visa .leftside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+/* INSURANCE  */
+
+.services .Insurance{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Insurance.rightside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Insurance .rightside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Insurance .rightside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.services .Insurance .leftside img{
+    height: 150px;
+    width: 150px;
+}
+
+/* UTILITY  */
+
+
+.services .Utility{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.services .Utility .rightside img{
+    height: 150px;
+    width: 150px;
+}
+
+.services .Utility .leftside p{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #263361;
+    text-indent: 20px;
+}
+
+.services .Utility .leftside button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #ED9957;
+    
+}
+
+.services .Utility .leftside button a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
